@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trade It"
+  short_description: "Implement Trade It embedded SDK in partner apps"
+  default_prompt: "Use $trade-it to wire Trade It connect and trade modals into this app."
