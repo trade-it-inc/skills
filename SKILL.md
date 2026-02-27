@@ -69,4 +69,5 @@ When using this skill, produce:
 
 ## References
 
-- Read `references/api-contract.md` before implementing request/response shapes or trade config details.
+- Read `references/api-contract.md` for request/response shapes, session URL flows, and SDK launch patterns.
+- Read `references/trade-config.md` for `launch.config` fields, enums, and trade examples.

@@ -7,6 +7,7 @@ This repository contains the `trade-it` skill for use with skills.sh and compati
 - `SKILL.md`: primary skill definition and workflow
 - `agents/openai.yaml`: UI metadata for compatible skill catalogs
 - `references/api-contract.md`: request/response contract and integration reference
+- `references/trade-config.md`: trade config fields, enums, and examples
 
 ## Skill
 
