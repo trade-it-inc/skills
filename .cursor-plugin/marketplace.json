@@ -1,0 +1,13 @@
+{
+  "name": "trade-it",
+  "owner": {
+    "name": "Trade It, Inc."
+  },
+  "plugins": [
+    {
+      "name": "trade-it-developer",
+      "source": "./",
+      "description": "Trade It integration guidance for onboarding, brokerages, trading, and webhooks."
+    }
+  ]
+}

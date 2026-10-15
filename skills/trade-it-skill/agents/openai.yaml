@@ -1,0 +1,7 @@
+interface:
+  display_name: "Trade It Developer"
+  short_description: "Build onboarding, brokerage, trading, and MCP integrations"
+  icon_small: "./assets/trade-it-symbol-light.svg"
+  icon_large: "./assets/trade-it-wordmark-light.svg"
+  brand_color: "#EC2029"
+  default_prompt: "Use $trade-it-skill to integrate the Trade It Portal, brokerage data, trading, or MCP into this project."

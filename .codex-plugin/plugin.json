@@ -1,0 +1,39 @@
+{
+  "name": "trade-it-developer",
+  "version": "1.0.0",
+  "description": "Build Trade It integrations for onboarding, brokerage connections, account data, trading, and webhooks.",
+  "author": {
+    "name": "Trade It, Inc.",
+    "url": "https://tradeit.app"
+  },
+  "homepage": "https://docs.tradeit.app/sdk",
+  "repository": "https://github.com/trade-it-inc/skills",
+  "keywords": [
+    "trade-it",
+    "brokerage",
+    "onboarding",
+    "oauth",
+    "trading",
+    "webhooks",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Trade It Developer",
+    "shortDescription": "Trade It integration guidance",
+    "longDescription": "Build partner onboarding, OAuth authorization, brokerage connections, account views, trading, and signed webhooks with current Trade It contracts.",
+    "developerName": "Trade It, Inc.",
+    "category": "Developer Tools",
+    "websiteURL": "https://tradeit.app",
+    "privacyPolicyURL": "https://tradeit.app/privacy-policy",
+    "termsOfServiceURL": "https://tradeit.app/terms-of-service",
+    "defaultPrompt": [
+      "Add the Trade It Portal with Onboarding and Connection modes to this app",
+      "Read connected brokerage accounts and holdings from this backend",
+      "Build a Trade It order review and approval flow"
+    ],
+    "brandColor": "#EC2029",
+    "composerIcon": "./skills/trade-it-skill/assets/trade-it-symbol-light.svg",
+    "logo": "./skills/trade-it-skill/assets/trade-it-wordmark-light.svg"
+  }
+}

@@ -1,4 +1,0 @@
-interface:
-  display_name: "Trade It Integration"
-  short_description: "Build embedded or direct Trade It integrations"
-  default_prompt: "Use $trade-it-react to integrate Trade It through embedded UI or direct backend trading APIs."

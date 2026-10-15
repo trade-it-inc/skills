@@ -1,0 +1,23 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "trade-it",
+  "owner": {
+    "name": "Trade It, Inc.",
+    "url": "https://tradeit.app"
+  },
+  "plugins": [
+    {
+      "name": "trade-it-developer",
+      "source": "./",
+      "description": "Trade It integration guidance for onboarding, brokerages, trading, and webhooks."
+    },
+    {
+      "name": "trade-it",
+      "source": {
+        "source": "github",
+        "repo": "trade-it-inc/trade-it-mcp"
+      },
+      "description": "Connect your brokerage accounts to your AI assistant to review holdings and manage trades."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "trade-it",
+  "interface": {
+    "displayName": "Trade It"
+  },
+  "plugins": [
+    {
+      "name": "trade-it-developer",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/trade-it-inc/skills.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Developer Tools"
+    },
+    {
+      "name": "trade-it",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/trade-it-inc/trade-it-mcp.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Finance"
+    }
+  ]
+}

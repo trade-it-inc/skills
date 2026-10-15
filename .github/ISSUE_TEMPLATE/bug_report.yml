@@ -1,0 +1,37 @@
+name: Skill or documentation issue
+description: Report incorrect guidance, installation trouble, or a reproducible integration example issue.
+title: "[Skill] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For security vulnerabilities, follow SECURITY.md and report privately through https://tradeit.app/contact.
+        Remove credentials, authorization codes, authenticated URLs, and personal data from logs and screenshots.
+  - type: input
+    id: assistant
+    attributes:
+      label: Assistant and version
+      placeholder: "For example: Codex CLI, Claude Code, Cursor, or VS Code / Copilot"
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Skill revision and SDK version
+      description: Include the commit or install date and the installed @trade-it/react version, if applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Which installation command, reference, or example led to the issue? Use sanitized test data.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected and observed behavior
+      description: Include relevant HTTP status or error text without credential values.
+    validations:
+      required: true

@@ -1,0 +1,22 @@
+{
+  "name": "trade-it-developer",
+  "version": "1.0.0",
+  "description": "Build Trade It integrations for onboarding, brokerage connections, account data, trading, and webhooks.",
+  "author": {
+    "name": "Trade It, Inc.",
+    "url": "https://tradeit.app"
+  },
+  "homepage": "https://docs.tradeit.app/sdk",
+  "repository": "https://github.com/trade-it-inc/skills",
+  "keywords": [
+    "trade-it",
+    "brokerage",
+    "onboarding",
+    "oauth",
+    "trading",
+    "webhooks",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "logo": "skills/trade-it-skill/assets/trade-it-symbol-light.svg"
+}
