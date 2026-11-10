@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://tradeit.app">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="skills/trade-it-skill/assets/trade-it-wordmark-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="skills/trade-it-skill/assets/trade-it-wordmark-light.svg">
-      <img src="skills/trade-it-skill/assets/trade-it-wordmark-light.svg" alt="Trade It" width="260">
+      <source media="(prefers-color-scheme: dark)" srcset="skills/trade-it-developer/assets/trade-it-wordmark-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="skills/trade-it-developer/assets/trade-it-wordmark-light.svg">
+      <img src="skills/trade-it-developer/assets/trade-it-wordmark-light.svg" alt="Trade It" width="260">
     </picture>
   </a>
 </p>
@@ -24,14 +24,14 @@ Build onboarding, OAuth, brokerage connections, account views, trading, webhooks
 
 | Plugin | For | Includes |
 | --- | --- | --- |
-| **Trade It Developer** — this repository | Developers building products with Trade It | `trade-it-skill`, SDK/API guidance, and integration references |
+| **Trade It Developer** — this repository | Developers building products with Trade It | `trade-it-developer`, SDK/API guidance, and integration references |
 | **[Trade It](https://github.com/trade-it-inc/trade-it-mcp)** | People using their brokerage accounts through an AI assistant | Brokerage MCP connection and `trade-it-mcp` workflow guidance |
 
 The shared **Trade It** marketplace lists both offerings in Codex and Claude Code. Install the one that matches your task; they can also be used together. Developer setup does not require connecting a personal brokerage account.
 
 ## Install
 
-Choose your assistant. The **Trade It Developer** plugin bundles `trade-it-skill` and its reference guides. Install it once through your assistant's plugin manager, then start a new session.
+Choose your assistant. The **Trade It Developer** plugin bundles `trade-it-developer` and its reference guides. Install it once through your assistant's plugin manager, then start a new session.
 
 ### Codex
 
@@ -49,7 +49,7 @@ Select **Trade It Developer** through `/skills` or the `$` picker, or ask Codex 
 /plugin install trade-it-developer@trade-it
 ```
 
-Invoke **`/trade-it-developer:trade-it-skill`** in Claude Code, or ask it to implement a Trade It integration. [Claude Code plugin documentation](https://code.claude.com/docs/en/discover-plugins)
+Invoke **`/trade-it-developer:trade-it-developer`** in Claude Code, or ask it to implement a Trade It integration. [Claude Code plugin documentation](https://code.claude.com/docs/en/discover-plugins)
 
 ### Cursor
 
@@ -65,31 +65,31 @@ Describe your Trade It task in Agent chat so the agent can select the skill. [Cu
 2. Run **Chat: Install Plugin From Source** in the Command Palette.
 3. Enter `https://github.com/trade-it-inc/skills` and install **Trade It Developer**.
 
-Open Copilot Agent chat and ask it to use `trade-it-skill`. [VS Code plugin documentation](https://code.visualstudio.com/docs/agent-customization/agent-plugins)
+Open Copilot Agent chat and ask it to use `trade-it-developer`. [VS Code plugin documentation](https://code.visualstudio.com/docs/agent-customization/agent-plugins)
 
 ### OpenCode
 
 ```bash
-npx skills add trade-it-inc/skills --skill trade-it-skill --agent opencode
+npx skills add trade-it-inc/skills --skill trade-it-developer --agent opencode
 ```
 
-Ask OpenCode to use `trade-it-skill` for your integration. It discovers the skill and loads its instructions when relevant. [OpenCode skill documentation](https://opencode.ai/docs/skills/)
+Ask OpenCode to use `trade-it-developer` for your integration. It discovers the skill and loads its instructions when relevant. [OpenCode skill documentation](https://opencode.ai/docs/skills/)
 
 ### Standalone skill installation
 
 If you prefer installing only the skill, use the interactive [skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
-npx skills add trade-it-inc/skills --skill trade-it-skill
+npx skills add trade-it-inc/skills --skill trade-it-developer
 ```
 
 Run this from your application repository for a project installation, or add `--global` for a personal installation. Add `--agent codex`, `--agent claude-code`, `--agent cursor`, `--agent github-copilot`, or `--agent opencode` to select an assistant directly. This installer requires Node.js/npm.
 
-Install through either the plugin manager or the skills CLI to avoid duplicate copies. Standalone skills use `$trade-it-skill` in Codex and `/trade-it-skill` in Claude Code; plugin skills can have an additional plugin namespace.
+Install through either the plugin manager or the skills CLI to avoid duplicate copies. Standalone skills use `$trade-it-developer` in Codex and `/trade-it-developer` in Claude Code; plugin skills can have an additional plugin namespace.
 
 ### Clone or copy
 
-Copy the **entire** `skills/trade-it-skill/` folder, including `references/`, `assets/`, and `agents/`, into a supported skill directory. Do not copy only `SKILL.md`.
+Copy the **entire** `skills/trade-it-developer/` folder, including `references/`, `assets/`, and `agents/`, into a supported skill directory. Do not copy only `SKILL.md`.
 
 | Assistant | Project directory | Personal directory | Documentation |
 | --- | --- | --- | --- |
@@ -104,7 +104,7 @@ For example, a first-time personal Codex installation:
 ```bash
 git clone https://github.com/trade-it-inc/skills.git trade-it-skills
 mkdir -p ~/.agents/skills
-cp -R trade-it-skills/skills/trade-it-skill ~/.agents/skills/
+cp -R trade-it-skills/skills/trade-it-developer ~/.agents/skills/
 ```
 
 Some assistants also discover shared `.agents/skills/` directories. The CLI may use those shared locations instead of the native paths in the manual-copy table. Local personal skills are not automatically available to cloud agents; use the assistant's documented project or cloud distribution method.
@@ -116,21 +116,21 @@ For native plugins, use your assistant's plugin manager to update or uninstall *
 For skills CLI installations, run in the same project or select the same global scope used during installation:
 
 ```bash
-npx skills update trade-it-skill
-npx skills remove trade-it-skill
+npx skills update trade-it-developer
+npx skills remove trade-it-developer
 ```
 
-For a manual installation, replace the installed folder with the updated package or remove that folder. If you installed the previous `trade-it-react` skill, remove it and install `trade-it-skill` under the same scope.
+For a manual installation, replace the installed folder with the updated package or remove that folder. If you installed the previous `trade-it-react` or `trade-it-skill` skill, remove it and install `trade-it-developer` under the same scope.
 
 The plugin contains integration guidance. Installing it does not install `@trade-it/react`, configure an MCP connection, or issue API credentials; those are separate steps in the integration guides.
 
-If you installed the earlier developer package under the plugin name `trade-it`, uninstall that package before switching to `trade-it-developer`. The `trade-it` name now identifies the user-facing brokerage plugin. Standalone `trade-it-skill` installations keep their existing name.
+If you installed the earlier developer package under the plugin name `trade-it`, uninstall that package before switching to `trade-it-developer`. The `trade-it` name now identifies the user-facing brokerage plugin.
 
 ## Brokerage MCP
 
 The **[Trade It user plugin](https://github.com/trade-it-inc/trade-it-mcp#install-the-plugin)** connects an assistant to `https://mcp.tradeit.app/mcp` to work with the user's accounts, holdings, and orders. Authentication happens separately through the user's Trade It account. It is optional for developers building integrations.
 
-To build an MCP client into your own product, read the [MCP integration reference](skills/trade-it-skill/references/other-integrations.md#mcp-client-integrations) and [installation guide](https://docs.tradeit.app/installation). Installing the user plugin does not authorize access to your application's other users.
+To build an MCP client into your own product, read the [MCP integration reference](skills/trade-it-developer/references/other-integrations.md#mcp-client-integrations) and [installation guide](https://docs.tradeit.app/installation). Installing the user plugin does not authorize access to your application's other users.
 
 ## Use
 
@@ -166,7 +166,7 @@ plugin.json                      Portable Agent Plugins manifest
 .claude-plugin/                  Claude Code manifest and marketplace
 .cursor-plugin/                  Cursor manifest and marketplace
 .github/ISSUE_TEMPLATE/           Structured skill/documentation bug reports
-skills/trade-it-skill/
+skills/trade-it-developer/
   SKILL.md                       Entry point and integration selection
   agents/openai.yaml             Skill catalog metadata and branding
   assets/                        Light/dark Trade It logos and symbols
@@ -181,7 +181,7 @@ skills/trade-it-skill/
     troubleshooting.md           Common failures and checks
 ```
 
-The [entry point](skills/trade-it-skill/SKILL.md) routes to focused references so the agent loads only what it needs. First-party docs and the application's pinned SDK types take precedence over copied examples when contracts change. Onboarding requires a deployed portal endpoint and an SDK release that supports `onAuthorization`.
+The [entry point](skills/trade-it-developer/SKILL.md) routes to focused references so the agent loads only what it needs. First-party docs and the application's pinned SDK types take precedence over copied examples when contracts change. Onboarding requires a deployed portal endpoint and an SDK release that supports `onAuthorization`.
 
 See [RELEASING.md](RELEASING.md) for the publication order and versioning of the two repositories.
 

@@ -4,4 +4,4 @@ interface:
   icon_small: "./assets/trade-it-symbol-light.svg"
   icon_large: "./assets/trade-it-wordmark-light.svg"
   brand_color: "#EC2029"
-  default_prompt: "Use $trade-it-skill to integrate the Trade It Portal, brokerage data, trading, or MCP into this project."
+  default_prompt: "Use $trade-it-developer to integrate the Trade It Portal, brokerage data, trading, or MCP into this project."

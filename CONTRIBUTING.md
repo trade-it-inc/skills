@@ -1,6 +1,6 @@
 # Contributing
 
-Keep the skill useful to an agent implementing a real Trade It integration. Its package is in `skills/trade-it-skill/`. Prefer a short entry point that routes to focused references rather than loading every contract into each request.
+Keep the skill useful to an agent implementing a real Trade It integration. Its package is in `skills/trade-it-developer/`. Prefer a short entry point that routes to focused references rather than loading every contract into each request.
 
 ## Sources
 
@@ -13,7 +13,7 @@ Use the public docs as the authority for current brokerage support, plan eligibi
 - Keep `SKILL.md` focused on task selection, retrieval sources, and essential invariants.
 - Add or change a reference only when it supports a concrete integration path. Link every reference from the entry point or another relevant reference.
 - Keep examples small, syntactically complete in their stated context, and free of real credentials or personal data. Label supplied variables and illustrative HTTP values clearly.
-- Preserve the developer skill name `trade-it-skill` and plugin name `trade-it-developer`. The user-facing plugin is named `trade-it` and lives in `trade-it-inc/trade-it-mcp`. Keep invocation examples, catalog metadata, and installation instructions consistent with the installation method.
+- Keep the developer skill and plugin both named `trade-it-developer`. The user-facing plugin is named `trade-it`, its skill is `trade-it-mcp`, and both live in `trade-it-inc/trade-it-mcp`. Keep invocation examples, catalog metadata, and installation instructions consistent with the installation method.
 - Do not add a dependency, plugin configuration, executable helper, or another skill solely to make the repository appear larger.
 
 ## Review
@@ -22,7 +22,7 @@ Review local reference links, SDK imports and enum names, request parameter casi
 
 Use appropriate checks or behavioral evaluation when requested or warranted, and report what was actually verified. Do not run a live trade or rotate credentials merely to validate documentation. Keep publication and external configuration changes within the user's authorization.
 
-Update the README's reference map and `skills/trade-it-skill/agents/openai.yaml` when capabilities or entry points change. Do not edit the separate application docs as part of a skill-only change unless requested.
+Update the README's reference map and `skills/trade-it-developer/agents/openai.yaml` when capabilities or entry points change. Do not edit the separate application docs as part of a skill-only change unless requested.
 
 ## Plugin packaging
 

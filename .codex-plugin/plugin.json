@@ -1,6 +1,6 @@
 {
   "name": "trade-it-developer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Build Trade It integrations for onboarding, brokerage connections, account data, trading, and webhooks.",
   "author": {
     "name": "Trade It, Inc.",
@@ -33,7 +33,7 @@
       "Build a Trade It order review and approval flow"
     ],
     "brandColor": "#EC2029",
-    "composerIcon": "./skills/trade-it-skill/assets/trade-it-symbol-light.svg",
-    "logo": "./skills/trade-it-skill/assets/trade-it-wordmark-light.svg"
+    "composerIcon": "./skills/trade-it-developer/assets/trade-it-symbol-light.svg",
+    "logo": "./skills/trade-it-developer/assets/trade-it-wordmark-light.svg"
   }
 }

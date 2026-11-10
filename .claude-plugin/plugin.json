@@ -1,6 +1,6 @@
 {
   "name": "trade-it-developer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Build Trade It integrations for onboarding, brokerage connections, account data, trading, and webhooks.",
   "author": {
     "name": "Trade It, Inc.",

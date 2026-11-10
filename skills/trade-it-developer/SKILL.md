@@ -1,5 +1,5 @@
 ---
-name: trade-it-skill
+name: trade-it-developer
 description: Build and troubleshoot products using Trade It's SDK, REST API, OAuth, portals, webhooks, Trade Links, or MCP client integrations. Use for developer integration work, not personal portfolio lookup or live trading through an already-connected assistant.
 ---
 

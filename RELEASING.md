@@ -17,13 +17,13 @@ The **Trade It** marketplace offers two independent packages:
 6. Confirm the user package can read a designated user's accounts after authorization. Available tools depend on the client and permissions; do not place a live trade solely to check installation. Native installation checks have not been run while preparing this split.
 7. Update any existing public directory listings to distinguish **Trade It Developer** from **Trade It**. A GitHub push makes repository installs available; it does not submit or update public plugin directory listings automatically.
 
-The MCP registry's `server.json` and its publish workflow describe the hosted server, not these assistant plugins. This packaging change does not require a new MCP registry version or a Worker deployment. SDK/API feature releases still follow their application release process before developer guidance can promise the new behavior.
+The MCP registry's `server.json` and its publish workflow describe the hosted server, not these assistant plugins. Plugin packaging alone does not require a new MCP registry version or a Worker deployment. The MCP repository also prepares a separate metadata refresh, `1.0.1`, removing unsupported SSE transport and updating its capabilities/schema. A push changing `server.json` on `main` triggers registry publication using its existing GitHub secret and domain setting; review the MCP repository's [publishing instructions](https://github.com/trade-it-inc/trade-it-mcp/blob/main/CONTRIBUTING.md#mcp-registry-publishing) before that push. SDK/API feature releases still follow their application release process before developer guidance can promise the new behavior.
 
 ## Existing installations
 
 The earlier developer plugin used `trade-it@trade-it`. Users of that unreleased package should uninstall it, refresh the marketplace, and install `trade-it-developer@trade-it` for development work. The `trade-it@trade-it` entry now installs the brokerage user package.
 
-The standalone developer skill remains `trade-it-skill`. Replace old `trade-it-react` installations as described in the README. The user skill is `trade-it-mcp`; standalone installation supplies instructions only and requires a separate MCP connection.
+The standalone developer skill is `trade-it-developer`. Replace old `trade-it-react` and `trade-it-skill` installations as described in the README. The user skill is `trade-it-mcp`; standalone installation supplies instructions only and requires a separate MCP connection.
 
 ## Future releases
 
