@@ -159,6 +159,7 @@ Example prompts; use your assistant's invocation syntax shown above:
 ```text
 README.md                        Installation, capabilities, and usage
 CONTRIBUTING.md                   Sources and maintenance conventions
+LICENSE                           MIT license
 SECURITY.md                       Private vulnerability reporting
 plugin.json                      Portable Agent Plugins manifest
 .agents/plugins/marketplace.json Shared Codex catalog for both plugins
@@ -193,3 +194,7 @@ For multi-user partner integrations, obtain client credentials through Trade It'
 - Incorrect guidance or installation problems: [open a skill issue](https://github.com/trade-it-inc/skills/issues/new/choose) with sanitized reproduction details.
 - Improvements: read [CONTRIBUTING.md](CONTRIBUTING.md).
 - Vulnerabilities or exposed credentials: follow [SECURITY.md](SECURITY.md) and report privately.
+
+## License
+
+[MIT](LICENSE) © 2026 Trade It.
